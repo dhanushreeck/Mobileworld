@@ -10,4 +10,10 @@
 				
 				driver.findElement(By.xpath("//input[@id='myName']")).sendKeys("Dhanu");//First Name
 				driver.findElement(By.xpath("//input[@placeholder='Last Name']")).sendKeys("shree");//Last Name
+				driver.findElement(By.xpath("//input[@type='Email']")).sendKeys("dhanushree@gmail.com");//Email
+				driver.findElement(By.xpath("//input[@type='Password']")).sendKeys("Dhanu@2000");//password
+				
+				driver.findElement(By.xpath("//input[@type='date']")).sendKeys("03-04-2000");//DOB
+				driver.findElement(By.xpath("//label[.='Male']/../input[1]")).click();//Male
+				driver.findElement(By.xpath("//label[.='Female']/following-sibling::input")).click();//Female
 				
